@@ -2,7 +2,7 @@ const express = require('express');
 const app = express();
 
 app.get("/", async (req, res) => {
-    res.send("Página Inicial");
+    res.send("Página Inicial - CRUD com BD do Matheus");
 });
 
 app.listen(8080, () => {
