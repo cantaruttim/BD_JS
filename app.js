@@ -1,13 +1,12 @@
 const express = require('express');
 const app = express();
-
-const db = require('./models/db');
+const User = require('./models/User');
 
 app.get("/", async (req, res) => { // tipo get
     res.send("Página Inicial - CRUD com BD do Matheus");
 });
 
-app.get("/cadastrar", async (req, res) => { // rota do tipo post
+app.post("/cadastrar", async (req, res) => { // rota do tipo post
     res.send("Página Cadastrar");
 });
 
