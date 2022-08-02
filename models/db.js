@@ -8,10 +8,10 @@ const sequelize = new Sequelize("projeto", "root", "123456", {
 
 sequelize.authenticate()
 .then(function(){
-    console.log('Conexão com o Banco de Dados realizado com sucesso!');
+    console.log('Ação realizada com sucesso!');
 
 }).catch(function(){
-    console.log('ERROR conexão com o banco de dados não realizado com sucesso');
+    console.log('ERROR Ação não realizado com sucesso');
 });
 
 module.exports = sequelize;
