@@ -17,9 +17,26 @@ const User = db.define('Users', {
     email: {
         type: Sequelize.STRING,
         allowNull: false,
-    }
+    },
+    project_name: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    responsible: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
+    time_spend: {
+        type: Sequelize.DATE,
+        allowNull: false,
+    },
+    status: {
+        type: Sequelize.STRING,
+        allowNull: false,
+    },
 });
 
 // criar a tabela
 //User.sync();
+//User.sync({ alter: true })
 module.exports = User;
