@@ -10,7 +10,6 @@ app.get("/", async (req, res) => { // tipo get
 
 app.post("/cadastrar", async (req, res) => { // rota do tipo post
     // console.log(req.body);
-
     await User.create(req.body)
     .then( () => {
         return res.json({

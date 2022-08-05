@@ -40,3 +40,7 @@ const User = db.define('Users', {
 //User.sync();
 //User.sync({ alter: true })
 module.exports = User;
+
+await User.destroy({
+    where: { id: '6' },
+  });
